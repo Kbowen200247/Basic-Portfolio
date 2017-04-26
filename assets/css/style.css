@@ -1,23 +1,30 @@
+
 body {
-	background-color: #eeeeee;
-	margin: 0;
-	padding: 0;
-	font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+	background-image: url("../../assets/images/binding_light.png");
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-header {
+#header {
 	background-color: #4aaaa5;
 	color: #fff;
-	padding: 0px 15px 0px 15px;
+	padding: 20px 15px 0px 15px;
 	float: left;
+	height: 42px;
 	margin-left: 125px;
 	margin-right: 200px;
 	font-family: "Georgia", "Times New Roman", Times serif;
+	font-size: 36px;
 }
 
 h2 {
 	color: #4aaaa5;
-	border-bottom: 2px solid #dddddd;
+	font-family: "Georgia", "Times New Roman", Times serif;
+    font-size: 1.50em;
+  	font-weight: bold;
+}
+
+a {
+	text-decoration: none;
 }
 
 #nav-top {
@@ -25,9 +32,8 @@ h2 {
 	background-color: #ffffff;
 }
 
-#nav {
+nav {
 	overflow: hidden;
-	background-color: #ffffff;
 }
 
 .lists {
@@ -37,40 +43,43 @@ h2 {
 	padding: 25px 30px 20px 10px
 }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 #container {
-	background: red;
 	width: 1192px;
 	margin: 25px auto;
 }
 
-#main-bio,
-#connect-link,
-#bio-image {
-	float: left;
-}
-
-#main-bio {
+.main {
 	background-color: #ffffff;
 	border: 1px solid #dddddd;
-	width: 43%;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-bottom: 20px;
+	width: 650px;
+	padding: 25px;
+    margin: 25px 0px 100px 125px;
+    float: left;
 }
 
 #bio-image {
 	margin-right: 20px;
 	width: 150px;
 	height: 150px;
+	float: left;
 }
 
-#connect-link {
+.paragraph {
+    line-height: 200%;
+}
+
+.sidebar {
 	background-color: #ffffff;
-    width: 18%;
     border: 1px solid #dddddd;
-    margin-left: 25px;
-    padding-left: 15px;
-    padding-right: 20px; 
+    float: left;
+    margin: 25px 30px;
+    padding: 25px 30px; 
 }
 
 .nav-links {
@@ -78,38 +87,36 @@ h2 {
     padding-left: 0px;
 }
 
-.links {
-	float: left;
-	display: block;
-}
-
 .icon-image {
-	width: 66px;
-	height: 66px;
-	margin-left: 5px;
+	width: 60px;
+	height: 60px;
+	margin-top: 15px;
+	display: inline-block;
 }
 
 .box-set {
-	background: #eaeaed;
 	position: relative;
 }
 
 .box {
 	background: #2db34a;
-	position: absolute;
 	width: 175px;
 	height: 130px;
 }
 
 .box-1 {
 	left: 10px;
-	top: 10px;
+	float: left;
 }
 
 .box-2 {
-	bottom: 130px;
-	left: 70px;
-	z-index: 3;
+	position: absolute;
+	left: 240px;
+}
+
+.box-4 {
+	position: absolute;
+	left: 240px;
 }
 
 .inputtext,
@@ -131,11 +138,7 @@ h2 {
     margin-bottom: 25px;
 }
 
-#main-bio {
-    float: left;
-}
-
-footer {
+.footer {
 	color: #ffffff;
 	background-color: #666666;
     border-top: 10px solid #4aaaa5;
