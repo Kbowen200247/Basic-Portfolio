@@ -3,47 +3,54 @@
 <head>
 	<meta charset="utf-8">
 	<title>My Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-	<div id="nav-top">
-		<header id="header">
-			<h1>Kristen Bowen</h1>
-		</header>
-		<nav>
-			<div class="lists">
-				<a href="index.html">About</a>
-			</div>
-			<div class="lists">
-				<a href="portfolio.html">Portfolio</a>
-			</div>
-			<div class="lists">
-				<a href="contact.html">Contact</a>
-			</div>
-		</nav>
-	</div>
+	<header>
+		<h1>Kristen Bowen</h1>
+	</header>
+	<ul>
+		<li>
+			<a href="index.html">About</a>
+		</li>
+		<li>
+			<a href="portfolio.html">Portfolio</a>
+		</li>
+		<li>
+			<a href="contact.html">Contact</a>
+		</li>
+	</ul>
 	<div>
 		<section class="main clearfix">
 			<h2>Contact</h2>
-			<hr>
-			<form>
-				Name<br>
-				<input class="inputtext" type="text" name="name" value=""><br>
-				Email<br>
-				<input class="inputtext" type="text" name="email" value=""><br>
-				Message<br>
+			<form action="mailto" method="post" enctype="text/plain">
+				<h3>Name</h3>
+				<br>
+				<input class="textform" type="text" name="name" value=""><br>
+				<h3>Email</h3>
+				<br>
+				<input class="textform" type="text" name="email" value="">
+				<h3>Message</h3>
+				<br>
 				<textarea class="comments" name="commets" rows="10" cols="80" title="comments"></textarea>
 				<input class="btnSubmit" type="submit" name="submit" value="Submit">
 			</form>
 		</section>
 
 		<section class="sidebar clearfix">
-			<h2 class="name">Connect with Me</h2>
-			<hr>
-				<a href="https://github.com/Kbowen200247"><img class="icon-image" src="assets/images/github_square_black.png" alt="github"></a>
-				<a href="https://www.linkedin.com/in/kristen-bowen-0655a554/"><img class="icon-image" src="assets/images/linkedin_square_color.png" alt="linkedin"></a>
-				<a href="#"><img class="icon-image" src="assets/images/stackoverflow.png" alt="stackoverflow"></a>
+			<h2>Connect with Me</h2>
+			<ol>
+				<li>
+					<a href="https://github.com/Kbowen200247" target="_blank"><img class="icon-image" src="assets/images/github_square_black.png" alt="github"></a>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/in/kristen-bowen-0655a554/" target="_blank"><img class="icon-image" src="assets/images/linkedin_square_color.png" alt="linkedin"></a>
+				</li>
+				<li>
+					<a href="#"><img class="icon-image" src="assets/images/stackoverflow128.png" alt="stackoverflow"></a>
+				</li>
+			</ol>
 		</section>
 	</div>
 	
